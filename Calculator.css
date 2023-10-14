@@ -1,0 +1,87 @@
+.calculator {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  background-color: #f9f9f9;
+}
+
+.display {
+  margin-bottom: 10px;
+}
+
+.display-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100px;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.result {
+  font-size: 24px;
+  text-align: right;
+}
+
+.input {
+  font-size: 36px;
+  text-align: right;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin-top: 10px;
+}
+
+button {
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.operator {
+  background-color: #ff6347;
+  color: white;
+}
+
+button.operator:hover {
+  background-color: #cc4c3e;
+}
+
+button.equal {
+  background-color: #4caf50;
+  color: white;
+}
+
+button.equal:hover {
+  background-color: #3e8e41;
+}
+
+button.clear {
+  background-color: #f44336;
+  color: white;
+}
+
+button.clear:hover {
+  background-color: #d32f2f;
+}
+
+button.number {
+  background-color: #f9f9f9;
+}
+
+button.number:hover {
+  background-color: #ddd;
+}
